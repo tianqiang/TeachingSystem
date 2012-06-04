@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="79afd6fe-c7c8-4851-a5ad-d92e10385bd6" name="chen@CHEN-PC 2012-05-20 23:57:41" runUser="chen-PC\chen" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="5213b215-985d-4947-814a-2d78c79e8260">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="chen_CHEN-PC 2012-05-20 23_57_41">
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\shareLibs\log4net.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\TeachingSystem.Data\shareLibs\NHibernate.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\shareLibs\Castle.Core.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\TeachingSystem.Data\bin\Debug\teachingSystemData.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\TeachingSystem.Domain\bin\Debug\TeachingSystem.Domain.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\shareLibs\antlr.runtime.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\shareLibs\Iesi.Collections.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\TeachingSystem.Data\shareLibs\NHibernate.ByteCode.Castle.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-20T23:57:41.3038042+08:00" queuing="2012-05-20T23:57:43.4679280+08:00" start="2012-05-20T23:57:43.7789458+08:00" finish="2012-05-20T23:57:48.7322291+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="saveDataTest" storage="f:\c#编程\teachingsystem\teachingsystem.data.test\bin\debug\teachingsystem.data.test.dll" id="c18acef9-8141-359f-baa8-41e3acc31a8a">
+      <Execution id="080475c9-3941-4ffb-a717-0a70a129d828" />
+      <TestMethod codeBase="F:/C#编程/TeachingSystem/TeachingSystem.Data.Test/bin/Debug/TeachingSystem.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TeachingSystem.Data.Test.UserDataTest, TeachingSystem.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="saveDataTest" />
+    </UnitTest>
+    <UnitTest name="dataBaseConnectTest" storage="f:\c#编程\teachingsystem\teachingsystem.data.test\bin\debug\teachingsystem.data.test.dll" id="610c62ce-2622-16d3-2b0f-c7e338df05d4">
+      <Execution id="9f2a774a-034d-4de4-88e9-d02c47a66b01" />
+      <TestMethod codeBase="F:/C#编程/TeachingSystem/TeachingSystem.Data.Test/bin/Debug/TeachingSystem.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TeachingSystem.Data.Test.UserDataTest, TeachingSystem.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="dataBaseConnectTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="610c62ce-2622-16d3-2b0f-c7e338df05d4" executionId="9f2a774a-034d-4de4-88e9-d02c47a66b01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c18acef9-8141-359f-baa8-41e3acc31a8a" executionId="080475c9-3941-4ffb-a717-0a70a129d828" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9f2a774a-034d-4de4-88e9-d02c47a66b01" testId="610c62ce-2622-16d3-2b0f-c7e338df05d4" testName="dataBaseConnectTest" computerName="CHEN-PC" duration="00:00:03.9408236" startTime="2012-05-20T23:57:43.8439495+08:00" endTime="2012-05-20T23:57:48.6092221+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f2a774a-034d-4de4-88e9-d02c47a66b01">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TeachingSystem.Data.Test.UserDataTest.dataBaseConnectTest 引发了异常: 
+NHibernate.InvalidProxyTypeException: The following types may not be used as proxies:
+TeachingSystem.Domain.Entities.UserData: method get_Account should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Account should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Role should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Role should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Name should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Name should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_NickName should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_NickName should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Email should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Email should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Password should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Password should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Sex should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Sex should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Major should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Major should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_College should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_College should be 'public/protected virtual' or 'protected internal virtual'</Message>
+          <StackTrace>    在 NHibernate.Cfg.Configuration.ValidateEntities()
+   在 NHibernate.Cfg.Configuration.Validate()
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 TeachingSystem.Data.NHibernateHelper.GetSessionFactory() 位置 F:\C#编程\TeachingSystem\TeachingSystem.Data\NHibernateHelper.cs:行号 19
+   在 TeachingSystem.Data.NHibernateHelper..ctor() 位置 F:\C#编程\TeachingSystem\TeachingSystem.Data\NHibernateHelper.cs:行号 15
+   在 TeachingSystem.Data.NHibernateData..ctor() 位置 F:\C#编程\TeachingSystem\TeachingSystem.Data\NHibernateData.cs:行号 15
+   在 TeachingSystem.Data.Test.UserDataTest.dataBaseConnectTest() 位置 F:\C#编程\TeachingSystem\TeachingSystem.Data.Test\UserDataTest.cs:行号 67
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="080475c9-3941-4ffb-a717-0a70a129d828" testId="c18acef9-8141-359f-baa8-41e3acc31a8a" testName="saveDataTest" computerName="CHEN-PC" duration="00:00:00.0069723" startTime="2012-05-20T23:57:48.6122222+08:00" endTime="2012-05-20T23:57:48.6322234+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="080475c9-3941-4ffb-a717-0a70a129d828">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TeachingSystem.Data.Test.UserDataTest.saveDataTest 引发了异常: 
+NHibernate.InvalidProxyTypeException: The following types may not be used as proxies:
+TeachingSystem.Domain.Entities.UserData: method get_Account should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Account should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Role should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Role should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Name should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Name should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_NickName should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_NickName should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Email should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Email should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Password should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Password should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Sex should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Sex should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_Major should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_Major should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method get_College should be 'public/protected virtual' or 'protected internal virtual'
+TeachingSystem.Domain.Entities.UserData: method set_College should be 'public/protected virtual' or 'protected internal virtual'</Message>
+          <StackTrace>    在 NHibernate.Cfg.Configuration.ValidateEntities()
+   在 NHibernate.Cfg.Configuration.Validate()
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 TeachingSystem.Data.NHibernateHelper.GetSessionFactory() 位置 F:\C#编程\TeachingSystem\TeachingSystem.Data\NHibernateHelper.cs:行号 19
+   在 TeachingSystem.Data.NHibernateHelper..ctor() 位置 F:\C#编程\TeachingSystem\TeachingSystem.Data\NHibernateHelper.cs:行号 15
+   在 TeachingSystem.Data.Test.UserDataTest.saveDataTest() 位置 F:\C#编程\TeachingSystem\TeachingSystem.Data.Test\UserDataTest.cs:行号 78
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="75ed875b-a1c5-4a48-92e0-179839389344" name="chen@CHEN-PC 2011-06-09 00:47:21" runUser="chen-PC\chen" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="5213b215-985d-4947-814a-2d78c79e8260">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="chen_CHEN-PC 2011-06-09 00_47_21">
+      <DeploymentItem filename="F:\NET编程\TeachingSystem\TeachingSystem.Data\shareLibs\NHibernate.dll" />
+      <DeploymentItem filename="F:\NET编程\TeachingSystem\shareLibs\Iesi.Collections.dll" />
+      <DeploymentItem filename="F:\NET编程\TeachingSystem\TeachingSystem.Data\bin\Debug\teachingSystemData.dll" />
+      <DeploymentItem filename="F:\NET编程\TeachingSystem\shareLibs\antlr.runtime.dll" />
+      <DeploymentItem filename="F:\NET编程\TeachingSystem\TeachingSystem.Data\shareLibs\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="F:\NET编程\TeachingSystem\TeachingSystem.Domain\bin\Debug\TeachingSystem.Domain.dll" />
+      <DeploymentItem filename="F:\NET编程\TeachingSystem\shareLibs\Castle.Core.dll" />
+      <DeploymentItem filename="F:\NET编程\TeachingSystem\shareLibs\log4net.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-06-09T00:47:21.4967874+08:00" queuing="2011-06-09T00:47:21.5507905+08:00" start="2011-06-09T00:47:21.5727917+08:00" finish="2011-06-09T00:47:23.4208974+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ConnectToCourseTest" storage="f:\net编程\teachingsystem\teachingsystem.data.test\bin\debug\teachingsystem.data.test.dll" id="b1a666e1-f67d-c091-a983-609cdd978271">
+      <Execution id="aabc8f53-0b78-4f49-bf32-836850267477" />
+      <TestMethod codeBase="F:/NET编程/TeachingSystem/TeachingSystem.Data.Test/bin/Debug/TeachingSystem.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TeachingSystem.Data.Test.UserDataTest, TeachingSystem.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConnectToCourseTest" />
+    </UnitTest>
+    <UnitTest name="ConnectToTime" storage="f:\net编程\teachingsystem\teachingsystem.data.test\bin\debug\teachingsystem.data.test.dll" id="d12408a5-009a-0883-cff6-e73f9fc2300a">
+      <Execution id="65e664ac-73b2-4500-9a12-24515e2a1da1" />
+      <TestMethod codeBase="F:/NET编程/TeachingSystem/TeachingSystem.Data.Test/bin/Debug/TeachingSystem.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TeachingSystem.Data.Test.UserDataTest, TeachingSystem.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConnectToTime" />
+    </UnitTest>
+    <UnitTest name="dataBaseConnectTest" storage="f:\net编程\teachingsystem\teachingsystem.data.test\bin\debug\teachingsystem.data.test.dll" id="610c62ce-2622-16d3-2b0f-c7e338df05d4">
+      <Execution id="7c0ca03c-cd18-44c5-8af1-26249b524f9f" />
+      <TestMethod codeBase="F:/NET编程/TeachingSystem/TeachingSystem.Data.Test/bin/Debug/TeachingSystem.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TeachingSystem.Data.Test.UserDataTest, TeachingSystem.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="dataBaseConnectTest" />
+    </UnitTest>
+    <UnitTest name="ConnectToCompleteCourse" storage="f:\net编程\teachingsystem\teachingsystem.data.test\bin\debug\teachingsystem.data.test.dll" id="3edede1e-bfa1-d746-b05d-1ff18667edaf">
+      <Execution id="64a198e7-a394-43b5-a0c0-05954e264c28" />
+      <TestMethod codeBase="F:/NET编程/TeachingSystem/TeachingSystem.Data.Test/bin/Debug/TeachingSystem.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TeachingSystem.Data.Test.UserDataTest, TeachingSystem.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConnectToCompleteCourse" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3edede1e-bfa1-d746-b05d-1ff18667edaf" executionId="64a198e7-a394-43b5-a0c0-05954e264c28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="610c62ce-2622-16d3-2b0f-c7e338df05d4" executionId="7c0ca03c-cd18-44c5-8af1-26249b524f9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b1a666e1-f67d-c091-a983-609cdd978271" executionId="aabc8f53-0b78-4f49-bf32-836850267477" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d12408a5-009a-0883-cff6-e73f9fc2300a" executionId="65e664ac-73b2-4500-9a12-24515e2a1da1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="64a198e7-a394-43b5-a0c0-05954e264c28" testId="3edede1e-bfa1-d746-b05d-1ff18667edaf" testName="ConnectToCompleteCourse" computerName="CHEN-PC" duration="00:00:01.4961084" startTime="2011-06-09T00:47:21.5857925+08:00" endTime="2011-06-09T00:47:23.3148914+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64a198e7-a394-43b5-a0c0-05954e264c28">
+    </UnitTestResult>
+    <UnitTestResult executionId="7c0ca03c-cd18-44c5-8af1-26249b524f9f" testId="610c62ce-2622-16d3-2b0f-c7e338df05d4" testName="dataBaseConnectTest" computerName="CHEN-PC" duration="00:00:00.0165761" startTime="2011-06-09T00:47:23.3218918+08:00" endTime="2011-06-09T00:47:23.3448931+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c0ca03c-cd18-44c5-8af1-26249b524f9f">
+    </UnitTestResult>
+    <UnitTestResult executionId="aabc8f53-0b78-4f49-bf32-836850267477" testId="b1a666e1-f67d-c091-a983-609cdd978271" testName="ConnectToCourseTest" computerName="CHEN-PC" duration="00:00:00.0160883" startTime="2011-06-09T00:47:23.3488933+08:00" endTime="2011-06-09T00:47:23.3698945+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aabc8f53-0b78-4f49-bf32-836850267477">
+    </UnitTestResult>
+    <UnitTestResult executionId="65e664ac-73b2-4500-9a12-24515e2a1da1" testId="d12408a5-009a-0883-cff6-e73f9fc2300a" testName="ConnectToTime" computerName="CHEN-PC" duration="00:00:00.0133459" startTime="2011-06-09T00:47:23.3728947+08:00" endTime="2011-06-09T00:47:23.3928958+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65e664ac-73b2-4500-9a12-24515e2a1da1">
+    </UnitTestResult>
+  </Results>
+</TestRun>

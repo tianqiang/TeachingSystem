@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="dcdb99bb-87a9-4a7f-9e72-34b5d9ecd10b" name="chen@CHEN-PC 2012-05-20 23:48:45" runUser="chen-PC\chen" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="5213b215-985d-4947-814a-2d78c79e8260">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="chen_CHEN-PC 2012-05-20 23_48_45">
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\shareLibs\log4net.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\TeachingSystem.Data\shareLibs\NHibernate.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\shareLibs\Castle.Core.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\TeachingSystem.Data\bin\Debug\teachingSystemData.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\TeachingSystem.Domain\bin\Debug\TeachingSystem.Domain.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\shareLibs\antlr.runtime.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\shareLibs\Iesi.Collections.dll" />
+      <DeploymentItem filename="F:\C#编程\TeachingSystem\TeachingSystem.Data\shareLibs\NHibernate.ByteCode.Castle.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-20T23:48:45.4441548+08:00" queuing="2012-05-20T23:48:45.5261595+08:00" start="2012-05-20T23:48:45.5441605+08:00" finish="2012-05-20T23:48:47.3202621+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="saveDataTest" storage="f:\c#编程\teachingsystem\teachingsystem.data.test\bin\debug\teachingsystem.data.test.dll" id="c18acef9-8141-359f-baa8-41e3acc31a8a">
+      <Execution id="d7475ef1-0e85-477b-8b35-20fde037d167" />
+      <TestMethod codeBase="F:/C#编程/TeachingSystem/TeachingSystem.Data.Test/bin/Debug/TeachingSystem.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TeachingSystem.Data.Test.UserDataTest, TeachingSystem.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="saveDataTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c18acef9-8141-359f-baa8-41e3acc31a8a" executionId="d7475ef1-0e85-477b-8b35-20fde037d167" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d7475ef1-0e85-477b-8b35-20fde037d167" testId="c18acef9-8141-359f-baa8-41e3acc31a8a" testName="saveDataTest" computerName="CHEN-PC" duration="00:00:01.4471627" startTime="2012-05-20T23:48:45.5521610+08:00" endTime="2012-05-20T23:48:47.2832600+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d7475ef1-0e85-477b-8b35-20fde037d167">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TeachingSystem.Data.Test.UserDataTest.saveDataTest 引发了异常: 
+NHibernate.Exceptions.GenericADOException: could not insert: [TeachingSystem.Domain.Entities.UserData][SQL: INSERT INTO user (Account, Role, Name, NickName, Email, Password, Sex, Major, College) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)] ---&gt; MySql.Data.MySqlClient.MySqlException: Duplicate entry '45' for key 'PRIMARY'</Message>
+          <StackTrace>    在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32&amp; affectedRow, Int32&amp; insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32&amp; affectedRows, Int32&amp; insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+   在 NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder)
+ --- 内部异常堆栈跟踪的末尾 ---
+    在 NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder)
+   在 NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   在 NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session)
+   在 NHibernate.Action.EntityIdentityInsertAction.Execute()
+   在 NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   在 NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   在 NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   在 NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   在 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   在 NHibernate.Event.Default.DefaultSaveEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   在 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   在 NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   在 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   在 NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   在 NHibernate.Impl.SessionImpl.Save(Object obj)
+   在 TeachingSystem.Data.Test.UserDataTest.saveDataTest() 位置 F:\C#编程\TeachingSystem\TeachingSystem.Data.Test\UserDataTest.cs:行号 83
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
