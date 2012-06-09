@@ -1,0 +1,151 @@
+﻿<Window x:Class="TeachingSystem.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                Title="注册界面" Height="400" Width="900" ResizeMode="NoResize" 
+        Style="{StaticResource ResourceKey=windowStyle}" AllowsTransparency="True"
+        WindowStyle="None" MouseLeftButtonDown="DragMove" 
+        Background="Transparent" WindowStartupLocation="CenterScreen" >
+    <Grid Margin="10">
+        <Rectangle Fill="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"  
+                             RadiusX="10" RadiusY="10" Margin="2">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="1">
+            <Border.Background>
+                <ImageBrush ImageSource="Images/logonBackground.jpg"/>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <DockPanel>
+                    <Button DockPanel.Dock="Left" Margin="80,5,0,5" Background="Transparent"
+                            FontSize="22" FontWeight="ExtraBold" Click="onClose"
+                            Width="100" Height="40" BorderBrush="Yellow">取消</Button>
+                    <Button DockPanel.Dock="Right" Margin="0,5,80,5" Background="Transparent"
+                            FontSize="22" FontWeight="ExtraBold" Click="onSubmit"
+                            Width="100" Height="40" BorderBrush="Yellow">提交</Button>
+                    <TextBlock FontSize="35" Foreground="Brown" FontWeight="Bold"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                           >注册新用户</TextBlock>
+                </DockPanel>
+                <TextBlock Grid.Row="2" Foreground="Blue" FontSize="16" Margin="50,2"
+                           Name="message">红色带‘*’号部分为必填</TextBlock>
+                    <Grid Grid.Row="1" Margin="30,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Foreground="DarkRed"  VerticalAlignment="Center"
+                              Margin="5" Name="nameTips">*你的姓名(长度小于15个字符)：</TextBlock>
+                    <TextBox Grid.Row="1" Background="#bbbbbbbb" Margin="15,2" Name="name"
+                             LostFocus="onNameInput"></TextBox>
+                    
+                    <TextBlock Foreground="YellowGreen"  VerticalAlignment="Center" Grid.Row="2"
+                              Margin="10,2" Name="nickNameTips">你的昵称(长度小于15个字符)：</TextBlock>
+                    <TextBox Grid.Row="3" Background="#bbbbbbbb" Margin="15,2" Name="nickName"
+                             LostFocus="onNickNameInput"></TextBox>
+
+                    <TextBlock Foreground="DarkRed"  VerticalAlignment="Center" Grid.Row="4"
+                              Margin="10,2" Name="accoutTips">*请设置你的帐号(学号或教师号)：</TextBlock>
+                    <TextBox Grid.Row="5" Background="#bbbbbbbb" Margin="15,2" Name="account"
+                             LostFocus="inputAccount"></TextBox>
+
+                    <TextBlock Foreground="DarkRed"  VerticalAlignment="Center" Grid.Row="6"
+                              Margin="10,2" Name="emailTips">*请设置你的邮箱：</TextBlock>
+                    <TextBox Grid.Row="7" Background="#bbbbbbbb" Margin="15,2" Name="email" 
+                             LostFocus="onInputEmail"></TextBox>
+
+                    <TextBlock Foreground="DarkRed"  VerticalAlignment="Center" Grid.Row="0"
+                              Margin="10,2" Grid.Column="1">*请选择你的学院：</TextBlock>
+                    <ComboBox Grid.Row="1" Grid.Column="1" Background="#bbbbbbbb" Margin="15,2" Name="college">
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">电气信息学院</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">人文学院</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">国际商学院</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">华文学院</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">经济学院</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">管理学院</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">法学院</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">四海书院</ComboBoxItem>
+                    </ComboBox>
+                    
+                    <TextBlock Foreground="DarkRed"  VerticalAlignment="Center" Grid.Row="4"
+                              Margin="10,2" Grid.Column="1" Name="majorTip">*请选择你所在的专业：</TextBlock>
+                    <ComboBox Grid.Row="5" Grid.Column="1" Background="#bbbbbbbb" Margin="15,2" Name="major">
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">软件工程</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">计算机科学与技术</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">专业英语</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">文学</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">经济学</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">管理学</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">法学</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">金融工程</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock Foreground="DarkRed"  VerticalAlignment="Center" Grid.Row="2"
+                              Margin="10,2" Grid.Column="1">*请选择你的身份：</TextBlock>
+                    <ComboBox Grid.Row="3" Grid.Column="1" Background="#bbbbbbbb" Margin="15,2" 
+                              Name="role" SelectionChanged="onRoleSelected">
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">教师</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">学生</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock Foreground="DarkRed"  VerticalAlignment="Center" Grid.Row="6"
+                              Margin="10,2" Grid.Column="1">*请选择你的性别：</TextBlock>
+                    <ComboBox Grid.Row="7" Grid.Column="1" Background="#bbbbbbbb" Margin="15,2" Name="sex">
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">男</ComboBoxItem>
+                        <ComboBoxItem Background="#bbbbbbbb" 
+                                      Foreground="BlueViolet">女</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock Foreground="DarkRed"  VerticalAlignment="Center" Grid.Row="0"
+                              Margin="10,2" Grid.Column="2" Name="passwordTips">*请输入你的密码(仅限数字或字母)：</TextBlock>
+                    <PasswordBox Grid.Row="1" Grid.Column="2" Background="#bbbbbbbb" 
+                                 Margin="15,2" Name="password"
+                                 LostFocus="onInputPassword"></PasswordBox>
+                    <TextBlock Foreground="DarkRed"  VerticalAlignment="Center" Grid.Row="2"
+                              Margin="10,2" Grid.Column="2" Name="comfirmPasswordTips"
+                               >*请再次输入你的密码：</TextBlock>
+                    <PasswordBox Grid.Row="3" Grid.Column="2" Background="#bbbbbbbb" 
+                                 Margin="15,2" Name="comfirmPassword"
+                                 LostFocus="onInPutComfirmPassword"></PasswordBox>
+
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
