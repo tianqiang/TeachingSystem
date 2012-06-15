@@ -1,0 +1,113 @@
+﻿<Window x:Class="TeachingSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="登陆界面" Height="300" Width="500" ResizeMode="NoResize" 
+        Style="{StaticResource ResourceKey=windowStyle}" AllowsTransparency="True"
+        WindowStyle="None" MouseLeftButtonDown="DragMove" 
+        Background="Transparent" Topmost="True" WindowStartupLocation="CenterScreen"
+        Activated="onActived">
+    <Grid Margin="10">
+        <Rectangle Fill="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"  
+                             RadiusX="10" RadiusY="10" Margin="2">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="1">
+            <Border.Background>
+                <ImageBrush ImageSource="Images/logonBackground.jpg"/>
+            </Border.Background>
+            <Grid Margin="30,0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"
+                   FontWeight="Bold" Foreground="Brown" Grid.ColumnSpan="2">登录教学系统</TextBlock>
+                <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+                   FontSize="18" Foreground="DarkRed" Name="message">
+            请填写用户名和密码：
+                </TextBlock>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">帐号：</TextBlock>
+                    <TextBox Grid.Column="1" Margin="5" BorderBrush="Gold" Background="#bbbbbbbb"
+<<<<<<< HEAD
+                             Name="accountNum">2009051729</TextBox>
+=======
+                             Name="accountNum"></TextBox>
+>>>>>>> d5f41675679c87c4bfdea8b84da533d33e706408
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">密码：</TextBlock>
+                    <PasswordBox Grid.Column="1" Margin="5" BorderBrush="Gold" Background="#bbbbbbbb"
+<<<<<<< HEAD
+                                 Name="password" Password="051729"></PasswordBox>
+=======
+                                 Name="password"></PasswordBox>
+>>>>>>> d5f41675679c87c4bfdea8b84da533d33e706408
+                </Grid>
+
+                <TextBlock Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center"
+                   FontSize="18" Foreground="DarkRed">
+            请选择你的身份：
+                </TextBlock>
+                <Grid Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        <TextBlock FontSize="20">教师：</TextBlock>
+<<<<<<< HEAD
+                        <RadioButton GroupName="role" VerticalAlignment="Center" Name="teacher" IsChecked="True"></RadioButton>
+=======
+                        <RadioButton GroupName="role" VerticalAlignment="Center" Name="teacher"></RadioButton>
+>>>>>>> d5f41675679c87c4bfdea8b84da533d33e706408
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+                        VerticalAlignment="Center" Grid.Column="1">
+                        <TextBlock FontSize="20">学生：</TextBlock>
+                        <RadioButton GroupName="role" VerticalAlignment="Center"
+<<<<<<< HEAD
+                              Name="student"></RadioButton>
+=======
+                             IsChecked="True" Name="student"></RadioButton>
+>>>>>>> d5f41675679c87c4bfdea8b84da533d33e706408
+                    </StackPanel>
+                </Grid>
+
+                <Button Background="Transparent" Grid.Column="1" HorizontalAlignment="Center" FontSize="18"
+                    VerticalAlignment="Center" Grid.Row="1" Width="80" Grid.RowSpan="2" 
+                    Margin="33,4,6,26" BorderBrush="Gold" Foreground="Orange"
+                        Click="onLogOn">确定</Button>
+                <Button Background="Transparent" Grid.Column="1" HorizontalAlignment="Center" FontSize="18"
+                    VerticalAlignment="Center" Grid.Row="2" Width="80" Grid.RowSpan="2"
+                    Click="onClose" Margin="33,25,6,5" BorderBrush="Yellow" 
+                    Foreground="YellowGreen">取消</Button>
+                <Button Background="Transparent" Grid.Column="1" HorizontalAlignment="Center" FontSize="18"
+                    VerticalAlignment="Center" Grid.Row="4" Width="80" Grid.RowSpan="2"
+                    Click="onRegister" Margin="30,8,3,9" BorderBrush="Yellow" 
+                    Foreground="Violet">注册</Button>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
